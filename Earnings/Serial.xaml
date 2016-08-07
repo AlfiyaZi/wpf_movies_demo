@@ -1,0 +1,19 @@
+﻿<local:MovieEdit x:Class="Earnings.Serial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Earnings"
+        mc:Ignorable="d" Height="172" Width="310" Style="{StaticResource WindowStyle}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="_cost" Content="Бюджет:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
+        <TextBox x:Name="cost" HorizontalAlignment="Left" Height="23" Margin="132,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="_duesTV" Content="Сборы с ТВ:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
+        <TextBox x:Name="duesTV" HorizontalAlignment="Left" Height="23" Margin="132,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="_duesExtra" Content="Сборы с проката:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Style="{StaticResource LabelStyle}"/>
+        <TextBox x:Name="duesExtra" HorizontalAlignment="Left" Height="23" Margin="132,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="_calc" Content="Рассчитать" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="86" Style="{StaticResource ButtonStyle}" Height="25" Click="_calc_Click"/>
+        <Button x:Name="_save" Content="Сохранить" HorizontalAlignment="Left" Margin="103,97,0,0" VerticalAlignment="Top" Width="86" Style="{StaticResource ButtonStyle}" Height="25" Click="_save_Click"/>
+        <Button x:Name="_cancel" Content="Отменить" HorizontalAlignment="Left" Margin="196,97,0,0" VerticalAlignment="Top" Width="86" Style="{StaticResource ButtonStyle}" Height="25" Click="_cancel_Click"/>
+    </Grid>
+</local:MovieEdit>
